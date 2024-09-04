@@ -123,17 +123,20 @@ app_license = "mit"
 # Hook on document methods and events
 
 # doc_events = {
-# 	"*": {
-# 		"on_update": "method",
-# 		"on_cancel": "method",
-# 		"on_trash": "method"
-# 	}
+#     "User": {
+#         "validate": "library_management.www.Test Hook.validate_library_member_role"
+#     }
 # }
+
 
 # Scheduled Tasks
 # ---------------
-
 # scheduler_events = {
+#     "all": [
+#         "library_management.www.Test Hook.check_membership_validity"
+#     ]
+#     }
+# # scheduler_events = {
 # 	"all": [
 # 		"library_management.tasks.all"
 # 	],
@@ -226,4 +229,31 @@ app_license = "mit"
 # default_log_clearing_doctypes = {
 # 	"Logging DocType Name": 30  # days to retain logs
 # }
-
+# Correct syntax for after_migrate
+after_migrate = "library_management.www.Test Hook.after_migrate"
+fixtures = [
+    {
+        "dt": "Workflow",
+        "filters": [
+            ["name", "in", ["Transaction","Membership"]]
+        ]
+    },
+    {
+        "dt": "Workflow State",
+        "filters": [
+            ["name", "in", ["Pending", "Approved", "Approval pending by librarian"]]
+        ]
+    },
+    {
+        "dt": "Workflow Action Master",
+        "filters": [
+            ["name", "in", ["Submit", "Approve","Reject"]]
+        ]
+    },
+    {
+        "dt": "Role",
+        "filters": [
+            ["name", "in", ["Test User"]]
+        ]
+    }
+]

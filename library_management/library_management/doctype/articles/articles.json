@@ -1,0 +1,50 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-07-09 09:45:31.811721",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "article",
+  "type",
+  "fine"
+ ],
+ "fields": [
+  {
+   "fieldname": "article",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Articles",
+   "options": "Article",
+   "reqd": 1
+  },
+  {
+   "fieldname": "type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Type",
+   "options": "Issue\nReturn"
+  },
+  {
+   "depends_on": "eval:doc.type=='Return'",
+   "fieldname": "fine",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Fine",
+   "options": "No Fine\nDamage Fine\nLost Fine"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-07-10 11:56:53.995734",
+ "modified_by": "Administrator",
+ "module": "Library Management",
+ "name": "Articles",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,78 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-07-09 17:12:22.774483",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "data_tyru",
+  "class",
+  "genderm",
+  "image",
+  "blood_group",
+  "phone_no",
+  "school_name"
+ ],
+ "fields": [
+  {
+   "fieldname": "data_tyru",
+   "fieldtype": "Data",
+   "label": "NAME"
+  },
+  {
+   "fieldname": "class",
+   "fieldtype": "Data",
+   "label": "CLASS"
+  },
+  {
+   "fieldname": "genderm",
+   "fieldtype": "Select",
+   "label": "GENDER",
+   "options": "MALE\nFEMALE"
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Attach Image",
+   "label": "IMAGE"
+  },
+  {
+   "fieldname": "blood_group",
+   "fieldtype": "Data",
+   "label": "BLOOD GROUP"
+  },
+  {
+   "fieldname": "phone_no",
+   "fieldtype": "Phone",
+   "label": "PHONE NO"
+  },
+  {
+   "fieldname": "school_name",
+   "fieldtype": "Data",
+   "label": "SCHOOL NAME"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-09-02 13:17:28.615076",
+ "modified_by": "Administrator",
+ "module": "Library Management",
+ "name": "ID CARD",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

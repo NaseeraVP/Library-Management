@@ -1,0 +1,79 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "LR.#####",
+ "creation": "2024-08-15 21:24:59.129074",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_ep0o",
+  "amended_from",
+  "return_article",
+  "receipt_date",
+  "member_name",
+  "fine_amount"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_ep0o",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Library Receipt",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "receipt_date",
+   "fieldtype": "Date",
+   "label": "Receipt Date"
+  },
+  {
+   "fieldname": "member_name",
+   "fieldtype": "Data",
+   "label": "Member Name:"
+  },
+  {
+   "fieldname": "fine_amount",
+   "fieldtype": "Int",
+   "label": "Fine Amount"
+  },
+  {
+   "fieldname": "return_article",
+   "fieldtype": "Data",
+   "label": "Return Article"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-09-02 09:58:05.890855",
+ "modified_by": "Administrator",
+ "module": "Library Management",
+ "name": "Library Receipt",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

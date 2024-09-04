@@ -1,0 +1,49 @@
+{
+ "cards": [
+  {
+   "card": "Article issued on date"
+  },
+  {
+   "card": "Article with amount 150"
+  },
+  {
+   "card": "Article with amount 150"
+  },
+  {
+   "card": "Article with amount 150"
+  },
+  {
+   "card": "Article with amount 150"
+  }
+ ],
+ "charts": [
+  {
+   "chart": "Article with last name shenza",
+   "width": "Half"
+  },
+  {
+   "chart": "Article with author name \"vaikkam muhammed basheer\"",
+   "width": "Half"
+  },
+  {
+   "chart": "Transaction on this date",
+   "width": "Half"
+  },
+  {
+   "chart": "No of articles issued",
+   "width": "Half"
+  }
+ ],
+ "creation": "2024-08-05 10:10:58.286995",
+ "dashboard_name": "My dashboard",
+ "docstatus": 0,
+ "doctype": "Dashboard",
+ "idx": 0,
+ "is_default": 0,
+ "is_standard": 1,
+ "modified": "2024-08-05 13:21:38.803256",
+ "modified_by": "Administrator",
+ "module": "Library Management",
+ "name": "My dashboard",
+ "owner": "Administrator"
+}

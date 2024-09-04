@@ -1,0 +1,92 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-07-09 16:16:12.467962",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "names",
+  "section_break_xmte",
+  "date_of_birth",
+  "address",
+  "pincode",
+  "column_break_gnwn",
+  "gender",
+  "district"
+ ],
+ "fields": [
+  {
+   "fieldname": "date_of_birth",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date of birth",
+   "reqd": 1
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Address",
+   "reqd": 1
+  },
+  {
+   "fieldname": "pincode",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Pincode",
+   "reqd": 1
+  },
+  {
+   "fieldname": "district",
+   "fieldtype": "Data",
+   "label": "District",
+   "reqd": 1
+  },
+  {
+   "fieldname": "gender",
+   "fieldtype": "Select",
+   "label": "Gender",
+   "options": "Male\nFemale",
+   "reqd": 1
+  },
+  {
+   "fieldname": "names",
+   "fieldtype": "Table",
+   "label": "Names",
+   "options": "example child",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_xmte",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_gnwn",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-07-10 09:39:31.799232",
+ "modified_by": "Administrator",
+ "module": "Library Management",
+ "name": "example",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
